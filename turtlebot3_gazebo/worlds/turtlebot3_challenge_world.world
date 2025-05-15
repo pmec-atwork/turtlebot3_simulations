@@ -43,6 +43,28 @@
       </ode>
     </physics>
 
+    <light type='directional' name='light'>
+       <pose>0 0 100 0 0 0</pose>
+       <diffuse>1.0 1.0 1.0 1</diffuse>
+       <specular>1.0 1.0 1.0 1</specular>
+       <attenuation>
+         <range>5000</range>
+         <constant>1.0</constant>
+         <linear>0.0</linear>
+         <quadratic>0.00</quadratic>
+       </attenuation>
+       <direction>-0.1 -0.1 -0.98</direction>
+       <cast_shadows>false</cast_shadows>
+    </light>
+
+    <model name="turtlebot3_challenge_world">
+      <static>1</static>
+      <include>
+        <uri>model://turtlebot3_challenge_world</uri>
+      </include>
+    </model>
+
+
     <model name="turtlebot3_challenge_world">
       <static>1</static>
       <include>
@@ -52,7 +74,7 @@
 
     <!-- Objetos reposicionados com espaçamento adequado -->
     <model name="apple">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>-1.5 1.5 0.12 0 0 0.8</pose>
       <include>
         <uri>model://apple</uri>
@@ -60,7 +82,7 @@
     </model>
 
     <model name="banana">
-      <static>1</static>
+      <static>o</static>
       <pose frame=''>1.5 1.5 0.15 0 0 -0.5</pose>
       <include>
         <uri>model://banana</uri>
@@ -68,15 +90,15 @@
     </model>
 
     <model name="bleach_cleanser">
-      <static>1</static>
-      <pose frame=''>2.0 -0.5 0.14 0 0 1.2</pose>
+      <static>o</static>
+      <pose frame=''>2.0 1.0 0.14 0 0 1.2</pose>
       <include>
         <uri>model://bleach_cleanser</uri>
       </include>
     </model>
 
     <model name="bowl">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>-2.0 0.5 0.10 0 0 0.3</pose>
       <include>
         <uri>model://bowl</uri>
@@ -84,7 +106,7 @@
     </model>
 
     <model name="chips_can">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>0.5 2.0 0.11 0 0 2.1</pose>
       <include>
         <uri>model://chips_can</uri>
@@ -92,7 +114,7 @@
     </model>
 
     <model name="cracker_box">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>-0.5 -2.0 0.16 0 0 -1.0</pose>
       <include>
         <uri>model://cracker_box</uri>
@@ -100,7 +122,7 @@
     </model>
 
     <model name="gelatin_box">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>1.8 -1.8 0.15 0 0 0.6</pose>
       <include>
         <uri>model://gelatin_box</uri>
@@ -108,7 +130,7 @@
     </model>
 
     <model name="master_chef_can">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>-1.8 -1.8 0.14 0 0 -1.5</pose>
       <include>
         <uri>model://master_chef_can</uri>
@@ -116,7 +138,7 @@
     </model>
 
     <model name="mustard_bottle">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>0.0 0.0 0.14 0 0 1.2</pose>
       <include>
         <uri>model://mustard_bottle</uri>
@@ -124,7 +146,7 @@
     </model>
 
     <model name="pitcher_base">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>-1.5 -0.5 0.11 0 0 -0.3</pose>
       <include>
         <uri>model://pitcher_base</uri>
@@ -132,7 +154,7 @@
     </model>
 
     <model name="tuna_fish_can">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>1.5 -0.5 0.12 0 0 2.4</pose>
       <include>
         <uri>model://tuna_fish_can</uri>
@@ -140,7 +162,7 @@
     </model>
 
     <model name="pudding_box">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>-0.8 1.2 0.14 0 0 0.2</pose>
       <include>
         <uri>model://pudding_box</uri>
@@ -148,7 +170,7 @@
     </model>
 
     <model name="tomato_soup_can">
-      <static>1</static>
+      <static>0</static>
       <pose frame=''>0.8 1.2 0.12 0 0 -0.8</pose>
       <include>
         <uri>model://tomato_soup_can</uri>
